@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
     <title>{{ title }} - Welcome To My Game</title>
 </head>
 <body>
-    <ul>
+    <header>
         <h1>HOME OF THE BEST GAMES</h1><b>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">New games</a></li>
-        <li><a href="/">Contact Us</a></li>
-     </ul>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">New games</a>
+                </li>
+                <li>
+                    <a href="/">Contact Us</a>
+                </li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
      <hr><b>
     {% block content %}{% endblock %}
 
     <br><br>
+    </main>
+    <footer class="footer"> 
 
-        <footer> &copy ATHOMASGAMES 2021</footer>
-    </body>
+    <p>&copy ATHOMASGAMES 2021</p>
+
+    </footer>
+</body>
 </html>

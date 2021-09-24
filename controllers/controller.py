@@ -12,5 +12,5 @@ def index():
 def play_game(player1pick, player2pick):
     player_1 = Player("Player1", player1pick)
     player_2 = Player("Player2", player2pick)
-    winner = Game.who_wins(player_1, player_2)
+    winner = Game.self.who_wins(player_1, player_2)
     return render_template("winner.html", title="winner", winner=winner )
