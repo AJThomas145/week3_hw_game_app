@@ -1,5 +1,4 @@
-# import pdb
-class Game:
+class Game():
 
     def __init__(self):
         self.players = []
