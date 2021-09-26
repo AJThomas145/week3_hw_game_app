@@ -15,3 +15,5 @@ def play_game(player1pick, player2pick):
     game = Game()
     winner = game.who_wins(player_1, player_2)
     return render_template("winner.html", title="winner", winner=winner )
+
+@app.route("/home/play")
