@@ -13,6 +13,7 @@ body {
     text-decoration: underline;
     color: blue;
 }
+
 #header {
     display:flex;
     flex-direction: row-reverse;
@@ -20,8 +21,7 @@ body {
     background: lightblue;
     gap: 50px;
     align-items: baseline;
-    
-    
+   
 }
 
 #menu {

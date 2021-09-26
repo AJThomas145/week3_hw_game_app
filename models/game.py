@@ -31,33 +31,25 @@ class Game():
             if player2.choice == "paper":
                 return "Player1 wins by playing scissors!!"
 
-    def computer_random():
-        computer = random.choice(1,2,3)
-        if computer == 1:
-            return computer == "rock"
-        elif computer == 2:
-            return computer == "paper"
-        elif computer == 3:
-            return computer == "scissors"
-
+ 
     def computer_game(self, player, computer):
         if player.choice == computer:
             return "No winner, play again!"
         elif player.choice  == "rock":
             if computer == "scissors":
-                return "Player1 wins by playing rock!!"
+                return "You win by playing rock!!"
             if computer == "paper":
                 return "Computer wins by playing paper!!"
         elif player.choice  == "paper":
             if computer == "scissors":
                 return "Computer wins by playing scissors!!"
             if computer == "rock":
-                return "Player1 wins by playing paper!!"
+                return "You win by playing paper!!"
         elif player.choice  == "scissors":
             if computer == "rock":
                 return "Computer wins by playing rock!!"
             if computer == "paper":
-                return "Player1 wins by playing scissors!!"
+                return "You win by playing scissors!!"
 
         
 
