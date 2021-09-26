@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+    
+    <h1> Play against the computer : </h1>
+    <form action="/play" method="POST">
+    <label for="player_pick">Choose paper, rock or scissors:</label>
+    <select id="player_pick" name="player_pick">
+        <option value="rock">rock</option>
+        <option value="paper">paper</option>
+        <option value="scissors">scissors</option>
+        <input type="submit" value="submit">
+    </select> 
+    </form>
+
+
+</body>
+
+
+
+
+
+{% endblock %}

@@ -16,4 +16,19 @@ def play_game(player1pick, player2pick):
     winner = game.who_wins(player_1, player_2)
     return render_template("winner.html", title="winner", winner=winner )
 
-@app.route("/home/play")
+@app.route("/play")
+def play():
+    return render_template("play.html", title="Play v computer")
+
+@app.route("/play", methods=["POST"])
+def play_pc():
+    player1pick = request.form["player_pick"]
+    player_1 = Player("Player1", player1pick)
+    game = Game()
+    pick = ["rock", "paper", "scissors"]
+    computer = pick[random.randint(0,2)] 
+    winner = game.computer_game(player_1, computer)
+    return render_template("winner.html", title="winner", winner=winner )
+
+
+    

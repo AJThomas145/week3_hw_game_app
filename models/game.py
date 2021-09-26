@@ -40,9 +40,7 @@ class Game():
         elif computer == 3:
             return computer == "scissors"
 
-    def computer_game(self, player):
-        pick = ["rock", "paper", "scissors"]
-        computer = pick[random.randint(0,2)]   
+    def computer_game(self, player, computer):
         if player.choice == computer:
             return "No winner, play again!"
         elif player.choice  == "rock":
